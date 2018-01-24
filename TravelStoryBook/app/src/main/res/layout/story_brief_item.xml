@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/story_brief_image"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+    <TextView
+        android:id="@+id/story_brief_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:paddingTop="@dimen/story_brief_padding_top"
+        android:paddingBottom="@dimen/story_brief_padding_buttom"
+        android:textSize="@dimen/story_brief_title_textSize"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/story_brief_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:paddingTop="@dimen/story_brief_padding_top"
+        android:paddingBottom="@dimen/story_brief_padding_buttom"
+        android:textSize="@dimen/story_brief_content_textSize" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:paddingTop="@dimen/story_brief_padding_top"
+        android:paddingBottom="@dimen/story_brief_padding_buttom">
+        <TextView
+            android:id="@+id/story_brief_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/story_brief_others_textSize"
+            android:textColor="#999"/>
+        <TextView
+            android:id="@+id/story_brief_dot"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="."
+            android:textSize="@dimen/story_brief_others_textSize"
+            android:textColor="#999"/>
+        <TextView
+            android:id="@+id/story_brief_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/story_brief_others_textSize"
+            android:textColor="#999"/>
+    </LinearLayout>
+
+
+</LinearLayout>

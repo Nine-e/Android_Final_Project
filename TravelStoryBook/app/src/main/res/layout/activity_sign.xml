@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:paddingLeft="@dimen/bar_padding_left"
+        android:paddingRight="@dimen/bar_padding_right"
+        android:paddingTop="@dimen/bar_padding_top"
+        android:background="@color/colorBarBackground">
+        <ImageButton
+            android:id="@+id/sign_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close"
+            android:background="@color/colorBarBackground"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填写信息   "
+            android:textColor="@color/colorBarText"
+            android:textSize="@dimen/bar_textSize"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/logo_1"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_shape_corner"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sign_number_edit"
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/story_brief_content_textSize"
+            android:textColor="#000"
+            android:background="@null"
+            android:hint="填您的手机号"
+            android:textColorHint="#999"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_shape_corner"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sign_password_edit"
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/story_brief_content_textSize"
+            android:textColor="#000"
+            android:background="@null"
+            android:hint="设置密码"
+            android:textColorHint="#999"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_shape_corner"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sign_sure_password_edit"
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/story_brief_content_textSize"
+            android:textColor="#000"
+            android:background="@null"
+            android:hint="确认密码"
+            android:textColorHint="#999"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_shape_corner"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sign_name_edit"
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/story_brief_content_textSize"
+            android:textColor="#000"
+            android:background="@null"
+            android:hint="填入昵称"
+            android:textColorHint="#999" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/sign_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/sign_boy_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:text="男"
+            />
+        <RadioButton
+            android:id="@+id/sign_girl_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:text="女"/>
+        <RadioButton
+            android:id="@+id/sign_unknow_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保密"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sign_button"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_shape_button"
+        android:text="注册" />
+
+</LinearLayout>
+

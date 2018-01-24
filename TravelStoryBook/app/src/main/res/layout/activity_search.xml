@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:paddingLeft="15dp"
+        android:paddingTop="@dimen/bar_padding_top"
+        android:background="@color/colorBarBackground">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/story_brief_padding_left"
+            android:paddingRight="@dimen/story_brief_padding_right"
+            android:background="@drawable/shape_corner"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/story_brief_padding_right"
+            android:src="@mipmap/search"
+            android:background="#555">
+        </ImageView>
+        <EditText
+            android:id="@+id/search_editText"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="@dimen/story_brief_content_textSize"
+            android:textColor="@color/colorBarText"
+            android:background="@null"
+            android:hint="请搜索目的地..."
+            android:textColorHint="@color/colorBarText"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:imeOptions="actionSearch"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/search_cancel_button"
+            android:layout_height="40dp"
+            android:layout_width="70dp"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/story_brief_content_textSize"
+            android:background="@color/colorBarBackground"
+            android:textColor="@color/colorBarText"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/search_hot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingTop="@dimen/story_brief_padding_top"
+        android:paddingBottom="@dimen/story_brief_padding_buttom"
+        android:text="热门搜索">
+    </TextView>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_hot_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/story_brief_padding_right"
+        android:paddingLeft="@dimen/story_brief_padding_left"
+        android:paddingTop="@dimen/story_brief_padding_top"
+        android:paddingBottom="@dimen/story_brief_padding_buttom">
+        <Button
+            android:id="@+id/search_hot_button1"
+            android:layout_height="35dp"
+            android:layout_width="65dp"
+            android:layout_marginRight="@dimen/story_brief_padding_right"
+            android:background="@drawable/shape_button"
+            android:text="印度"/>
+        <Button
+            android:id="@+id/search_hot_button2"
+            android:layout_height="35dp"
+            android:layout_width="65dp"
+            android:layout_marginRight="@dimen/story_brief_padding_right"
+            android:background="@drawable/shape_button"
+            android:text="日本"/>
+        <Button
+            android:id="@+id/search_hot_button3"
+            android:layout_height="35dp"
+            android:layout_width="65dp"
+            android:layout_marginRight="@dimen/story_brief_padding_right"
+            android:background="@drawable/shape_button"
+            android:text="柬埔寨"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>
+
+</LinearLayout>
